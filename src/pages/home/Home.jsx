@@ -5,7 +5,7 @@ import { Breadcrumb, Layout, Menu, theme, Table } from 'antd';
 
 const { Header, Content, Footer, Sider } = Layout;
 const { Column } = Table
-const LIST_CATEGORIES_URL = `http://localhost:4000/v1/categories`
+const LIST_CATEGORIES_URL = `https://latte-staging-wceiv3ifnq-an.a.run.app/v1/categories`
 
 const navbar = ['1', '2', '3'].map((key) => ({
     key,

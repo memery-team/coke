@@ -1,50 +1,3 @@
-
-
-
-
-// const Login = () => {
-
-    
-
-
-
-
-//     return (
-//         <div className="login-page">
-//             <p ref={errRef} className={errMsg ? "errmsg" : "offscreen"} aria-live="assertive">{errMsg}</p>
-//             <Form className="login-form">
-//                 <h2>Sign In</h2>
-//                 <label htmlFor="email"> Email </label>
-//                 <Input 
-//                     value={email} 
-//                     type="email" 
-//                     className="emailInput" 
-//                     id="email"
-//                     ref={userRef}
-//                     onChange={(e) => setEmail(e.target.value)}
-//                 />
-//                 <label htmlFor="password"> Password </label>
-//                 <Input 
-//                     value={password} 
-//                     type="password" 
-//                     className="passwordInput" 
-//                     id="password"
-//                     onChange={(e) => setPassword(e.target.value)}
-//                 />
-//                 <Button 
-//                     type="primary"
-//                     className="login-button"
-//                     onClick={handleSubmit}
-//                 > 
-//                     Sign In 
-//                 </Button>
-//             </Form>      
-//         </div>
-//     )
-// }
-
-// export default Login
-
 import React from "react"
 import { useNavigate } from "react-router-dom"
 import axios from "axios"   
@@ -52,7 +5,7 @@ import { LockOutlined, UserOutlined } from '@ant-design/icons';
 import { Button, Checkbox, Form, Input } from 'antd';
 import "./Login.css"
 
-const LOGIN_URL = `http://localhost:4000/v1/auth`
+const LOGIN_URL = `https://latte-staging-wceiv3ifnq-an.a.run.app/v1/auth`
 
 const Login = () => {
     const navigate = useNavigate()
