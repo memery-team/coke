@@ -6,6 +6,12 @@
     justify-content: center;
 }
 
+.spinner {
+    padding-left: 5px;
+    border-radius: 4px;
+}
+
+
 #components-form-demo-normal-login .login-form {
     max-width: 300px;
 }
