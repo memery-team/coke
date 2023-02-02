@@ -13,8 +13,6 @@ const Login = () => {
     const [loading, setLoading] = useState(false)
 
     const onFinish = async (values) => {
-        console.log('Received values of form: ', values);
-
         try {
             const admin = {
                 email: values.email,
@@ -48,7 +46,6 @@ const Login = () => {
                     onFinish={onFinish}
                 >
                     <h1>Memery</h1>
-                    <h2>Log In</h2>
                     <Form.Item
                         name="email"
                         rules={[
@@ -83,10 +80,6 @@ const Login = () => {
                         <Form.Item name="remember" valuePropName="checked" noStyle>
                             <Checkbox>Remember me</Checkbox>
                         </Form.Item>
-
-                        <a className="login-form-forgot" href="/#">
-                            Forgot password
-                        </a>
                     </Form.Item>
 
                     <Form.Item>
@@ -99,7 +92,6 @@ const Login = () => {
                             Log in
                             <Spin spinning={loading} className="spinner" size="small" />
                         </Button>
-                        Or <a href="/#">register now!</a>
                     </Form.Item>
                 </Form>
             </div>
