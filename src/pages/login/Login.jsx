@@ -5,7 +5,7 @@ import { LockOutlined, UserOutlined } from '@ant-design/icons';
 import { Button, Checkbox, Form, Input, Spin, ConfigProvider } from 'antd';
 import "./Login.css"
 
-const LOGIN_URL = `https://latte-staging-wceiv3ifnq-an.a.run.app/v1/auth`
+const LOGIN_URL = `https://latte-staging-wceiv3ifnq-an.a.run.app/v1/auth/sign-in`
 
 const Login = () => {
     const navigate = useNavigate()
