@@ -5,7 +5,7 @@ import { LockOutlined, UserOutlined } from '@ant-design/icons';
 import { Button, Checkbox, Form, Input, Spin, ConfigProvider } from 'antd';
 import "./Login.css"
 
-const LOGIN_URL = `https://latte-staging-wceiv3ifnq-an.a.run.app/v1/auth/sign-in`
+const LOGIN_URL = `https://staging.api.mywording.com/v1/auth/sign-in`
 
 const Login = () => {
     const navigate = useNavigate()
@@ -18,8 +18,8 @@ const Login = () => {
                 email: values.email,
                 password: values.password,
             }
-            const response = await axios.post(LOGIN_URL, admin) 
-            console.log(response)
+            const response = await axios.post(LOGIN_URL, admin)
+            localStorage.setItem('token', response.data.accessToken)
             return navigate("/home")
         } catch (err) {
             console.log(err)
